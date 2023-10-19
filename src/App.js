@@ -5,10 +5,12 @@ import Contact from './componets/contact/Contact';
 import Home from './componets/home/Home';
 import Portafolio from './componets/portafolio/Portafolio';
 import NavBar from './componets/NavBar/NavBar';
+import ParticlesComponent from './componets/ParticlesComponent';
 
 function App() {
   return (
     <div className="App">
+      <ParticlesComponent/>
       <NavBar />
       <Routes>
       <Route path="/" element={<Home />} />

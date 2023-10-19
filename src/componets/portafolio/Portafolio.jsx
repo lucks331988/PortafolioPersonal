@@ -1,50 +1,82 @@
 import styles from './Portafolio.module.css';
-
 import React from 'react';
 
 function Portfolio() {
-  const proyectos = [
-    {
-      id: 1,
-      titulo: 'Proyecto 1',
-      descripcion: 'Una descripción breve del proyecto 1.',
-      imagen: 'imagen1.jpg',
-      enlace: 'https://ejemplo.com/proyecto1',
-    },
-    {
-      id: 2,
-      titulo: 'Proyecto 2',
-      descripcion: 'Una descripción breve del proyecto 2.',
-      imagen: 'imagen2.jpg',
-      enlace: 'https://ejemplo.com/proyecto2',
-    },
-    {
-      id: 3,
-      titulo: 'Proyecto 3',
-      descripcion: 'Una descripción breve del proyecto 3.',
-      imagen: 'imagen3.jpg',
-      enlace: 'https://ejemplo.com/proyecto3',
-    },
-  ];
-
   return (
     <div className={styles.container}>
       <header>
         <h1>Mi Portafolio</h1>
       </header>
-      <section className="proyectos">
         <h2>Proyectos Destacados</h2>
-        <div className="proyecto-list">
-          {proyectos.map((proyecto) => (
-            <div className="proyecto" key={proyecto.id}>
-              <img src={proyecto.imagen} alt={proyecto.titulo} />
-              <h3>{proyecto.titulo}</h3>
-              <p>{proyecto.descripcion}</p>
-              <a href={proyecto.enlace} target="_blank" rel="noopener noreferrer">
-                Ver más
-              </a>
-            </div>
-          ))}
+      <section className={styles.proyectoList}>
+
+        <div className={styles.proyecto}>
+          <img
+            src="https://www.korosenai.es/wp-content/uploads/2017/12/rick-morty-temporada1.jpg.webp"
+            alt="Rick and Morty"
+            className={styles.imgFluid}
+          />
+          <h3>Rick and Morty</h3>
+          <p>
+            Este proyecto es un catálogo interactivo de personajes de la popular
+            serie de televisión "Rick and Morty." Está diseñado y desarrollado
+            utilizando tecnologías de vanguardia como React, Redux, React Router
+            DOM, Node.js y una base de datos PostgreSQL.
+          </p>
+          <a
+            href="https://github.com/lucks331988/RickandMorty.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btn}
+          >
+            Ver más
+          </a>
+        </div>
+
+        <div className={styles.proyecto}>
+          <img
+            src="https://play-lh.googleusercontent.com/VPqK75BwKMtTDFF6UQS6E3GYdYqzvZfddDxoKRH-DSlXIcYLN_EeSy5OXKx0bhBTtLUU=w240-h480-rw"
+            alt="Lista Tareas"
+            className={styles.imgFluid}
+          />
+          <h3>Lista Tareas</h3>
+          <p>
+            Esta aplicación te permite mantener un registro organizado de tus
+            tareas diarias. Está construida con tecnologías modernas como React
+            y Redux, lo que proporciona una experiencia de usuario fluida y una
+            gestión efectiva del estado de la aplicación.
+          </p>
+          <a
+            href="https://github.com/lucks331988/listaTareasReduxReact.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btn}
+          >
+            Ver más
+          </a>
+        </div>
+
+        <div className={styles.proyecto}>
+          <img
+            src="https://cdn.pixabay.com/photo/2022/05/08/03/10/calculator-7181192_1280.png"
+            alt="Calculadora con React"
+            className={styles.imgFluid}
+          />
+          <h3>Calculadora con React</h3>
+          <p>
+            Esta aplicación de calculadora es una herramienta versátil y precisa
+            que se ha desarrollado utilizando tecnologías de vanguardia como
+            React y Redux. Permite a los usuarios realizar operaciones
+            matemáticas con facilidad y precisión.
+          </p>
+          <a
+            href="https://github.com/lucks331988/calculadoraReackRedux.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btn}
+          >
+            Ver más
+          </a>
         </div>
       </section>
     </div>

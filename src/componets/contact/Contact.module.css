@@ -1,42 +1,45 @@
-/* Contact.module.css */
-
 .container {
-    background-color: #f5f5f5;
-    color: #333; 
-    padding: 20px;
-  }
-  
-  .contact-info h2 {
-    color: #333;
-  }
-  
-  .contact-form {
-    margin-top: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 10px;
-  }
-  
-  .form-group label {
-    color: #333; 
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd; 
-    border-radius: 4px;
-  }
-  
-  .form-group button[type="submit"] {
-    background-color: #333; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  
+  background-color: #00000058; 
+  color: #fff; 
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  border-bottom: 2px solid #fff; 
+  padding: 20px 0;
+  margin-bottom: 20px; /* Agrega un margen inferior para separar el header de la sección */
+}
+
+h1 {
+  font-size: 36px;
+  text-shadow: 2px 2px 4px #000; 
+}
+
+p {
+  font-size: 18px;
+  text-shadow: 1px 1px 2px #000; 
+}
+
+.welcome {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  text-shadow: 1px 1px 2px #000; 
+}
+
+.container,
+header,
+.welcome {
+  border: 2px solid #fff;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px 2px #fff; 
+}
+
+.container:hover,
+header:hover,
+.welcome:hover {
+  cursor: pointer;
+}

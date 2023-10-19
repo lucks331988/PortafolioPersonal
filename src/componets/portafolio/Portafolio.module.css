@@ -1,28 +1,64 @@
-/* Portfolio.module.css */
-
 .container {
-    background-color: #f5f5f5; /* Cambia el color de fondo según tus preferencias */
-    color: #333; /* Cambia el color del texto según tus preferencias */
+    background-color: #3333333b; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .proyectoList {
+    display: flex;
+    justify-content: space-around; /* Alineación de proyectos en el centro */
+    flex-wrap: wrap; /* Asegura que los proyectos se ajusten en pantallas más pequeñas */
     padding: 20px;
   }
   
-  .proyecto-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
   .proyecto {
-    width: 30%; /* Ajusta el ancho según tus preferencias */
-    margin-bottom: 20px;
-    background-color: white; /* Cambia el color de fondo del contenedor del proyecto */
-    padding: 10px;
-    border: 1px solid #ddd; /* Agrega un borde al contenedor del proyecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #444; /* Cambia el color de fondo según tu preferencia */
+    border: 1px solid #555; /* Borde para resaltar los proyectos */
+    border-radius: 10px; /* Bordes redondeados para resaltar */
+    box-shadow: 0 0 10px 2px #555; /* Sombra para resaltar */
+    color: #fff; /* Texto en blanco */
+    max-width: 250px; /* Ancho máximo para evitar que el contenido se expanda demasiado */
   }
   
-  .proyecto h3 {
-    color: #333; /* Cambia el color del título del proyecto según tus preferencias */
+  .imgFluid {
+    width: 150px; /* Tamaño de imagen de 150px x 150px */
+    height: 150px; /* Tamaño de imagen de 150px x 150px */
+    border-radius: 50%; /* Borde redondeado al 50% para hacer la imagen circular */
   }
   
-  /* Puedes agregar más estilos según sea necesario */
+  h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cambia el color del botón según tu preferencia */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor por encima */
+  }
   
