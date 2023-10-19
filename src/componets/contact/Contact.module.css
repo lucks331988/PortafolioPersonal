@@ -1,45 +1,95 @@
+
+
 .container {
-  background-color: #00000058; 
-  color: #fff; 
-  padding: 20px;
-  text-align: center;
-}
-
-header {
-  border-bottom: 2px solid #fff; 
-  padding: 20px 0;
-  margin-bottom: 20px; /* Agrega un margen inferior para separar el header de la sección */
-}
-
-h1 {
-  font-size: 36px;
-  text-shadow: 2px 2px 4px #000; 
-}
-
-p {
-  font-size: 18px;
-  text-shadow: 1px 1px 2px #000; 
-}
-
-.welcome {
+  background-color: #333; 
+  color: white;
   padding: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  text-shadow: 1px 1px 2px #000; 
+
+.icon {
+  color: #ffdb58;
 }
 
-.container,
-header,
-.welcome {
-  border: 2px solid #fff;
+
+.frmContact {
+  background-color: #222; 
+  padding: 20px;
+}
+
+.labels {
+  color: white; 
+}
+
+.input,
+.textarea {
+  background-color: #444; 
+  color: white;
+  border: 1px solid #555;
+}
+
+.boton {
+  background-color: #ffdb58; 
+  color: #333; 
+}
+
+.contactList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactList li {
+  margin-bottom: 10px;
+}
+
+.contactList a {
+  color: white; 
+}
+
+
+.frmContact {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
   border-radius: 10px; 
-  box-shadow: 0 0 10px 2px #fff; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
 }
 
-.container:hover,
-header:hover,
-.welcome:hover {
+.labels {
+  color: white;
+  margin: 10px 0; 
+  font-weight: bold;
+}
+
+.input,
+.textarea {
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px; 
+  padding: 10px;
+  margin: 5px 0; 
+  width: 100%;
+}
+
+.boton {
+  background-color: #ffdb58;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px; 
+  width: 100%; 
+}
+
+.imagen {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
